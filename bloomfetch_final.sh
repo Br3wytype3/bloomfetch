@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TITLE="$(whoami)@$(hostname) | $PWD"
+TITLE="$(whoami)@$(cat /etc/hostname) | $PWD"
 SPR="-------------------------------------"
 OS="$(cat /etc/*-release | grep PRETTY_NAME | cut -d = -f 2 | tr -d '"') "
 KRN="$(uname -r)"
